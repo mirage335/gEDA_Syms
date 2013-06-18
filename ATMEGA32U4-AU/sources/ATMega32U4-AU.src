@@ -1,0 +1,101 @@
+# This is the template file for creating symbols with tragesym						
+# every line starting with '#' is a comment line.						
+# save it as text file with tab separated cells and start tragesym						
+						
+[options]						
+# wordswap swaps labels if the pin is on the right side an looks like this:						
+#   "PB1 (CLK)". That's useful for micro controller port labels						
+# rotate_labels rotates the pintext of top and bottom pins						
+#   this is useful for large symbols like FPGAs with more than 100 pins						
+# sort_labels will sort the pins by it's labels						
+#   useful for address ports, busses, ...						
+wordswap	yes					
+rotate_labels	yes					
+sort_labels	no					
+generate_pinseq	yes					
+sym_width	3500					
+pinwidthvertical	400					
+pinwidthhorizontal	400					
+						
+[geda_attr]						
+# name will be printed in the top of the symbol						
+# if you have a device with slots, you'll have to use slot= and slotdef=						
+# use comment= if there are special information you want to add						
+version	20060113 1					
+name	ATMEGA32U4-AU					
+device	ATMEGA32U4-AU					
+refdes	U?					
+footprint	TQFP44_10					
+description	$6.04 MOUSER 556-ATMEGA32U4-AU					
+documentation	Arduino Leonardo					
+author	mirage335					
+numslots	0					
+dist-license	MIT					
+use-license	MIT					
+#slot	1					
+#slotdef	1:					
+#slotdef	2:					
+#slotdef	3:					
+#slotdef	4:					
+#comment						
+#comment						
+#comment						
+						
+[pins]						
+# tabseparated list of pin descriptions						
+#						
+# pinnr is the physical number of the pin						
+# seq is the pinseq= attribute, leave it blank if it doesn't matter						
+# type can be (in, out, io, oc, oe, pas, tp, tri, clk, pwr)						
+# style can be (line,dot,clk,dotclk,none). none if only want to add a net						
+# posit. can be (l,r,t,b) or empty for nets						
+# net specifies the name of the net. Vcc or GND for example.						
+# label represents the pinlabel.						
+#	negation lines can be added with "\_" example: \_enable\_ 					
+#	if you want to write a "\" use "\\" as escape sequence					
+#						
+#pinnr	seq	type	style	posit.	net	label
+34	34	pwr	line	l		VCC
+43	43	pwr	line	l		GND
+13	13	in	line	l		RESET
+16	16	pas	line	l		XTAL2
+17	17	pas	line	l		XTAL1
+44	44	pwr	line	l		AVCC
+24	24	pwr	line	l		AVCC
+42	42	in	line	l		AREF
+14	14	pwr	line	l		VCC
+15	15	pwr	line	l		GND
+23	23	pwr	line	l		GND
+35	35	pwr	line	l		GND
+6	6	io	line	l		UCap
+2	2	pwr	line	l		UVcc
+3	3	io	line	l		D-
+4	4	io	line	l		D+
+5	5	pwr	line	l		UGnd
+7	7	io	line	l		VBus
+12	12	io	line	r		(PCINT7/OC0A/OC1C/RTS) PB7
+30	30	io	line	r		(PCINT6/OC1B/OC4B/ADC13) PB6
+29	29	io	line	r		(PCINT5/OC1A/OC4B/ADC12) PB5
+28	28	io	line	r		(PCINT4/ADC11) PB4
+11	11	io	line	r		(PDO/PCINT3/MISO) PB3
+10	10	io	line	r		(PDI/PCINT2/MOSI) PB2
+9	9	io	line	r		(PCINT1/SCLK) PB1
+8	8	io	line	r		(SS/PCINT0) PB0
+32	32	io	line	r		(ICP3/CLK0/OC4A) PC7
+31	31	io	line	r		(OC3A/OC4A) PC6
+1	1	io	line	r		(INT.6/AIN0) PE6
+33	33	io	line	r		(HWB) PE2
+27	27	io	line	r		(T0/OC4D/ADC10) PD7
+26	26	io	line	r		(T1/OC4D/ADC9) PD6
+22	22	io	line	r		(XCK1/CTS) PD5
+25	25	io	line	r		(ICP1/ADC8) PD4
+21	21	io	line	r		(TXD1/INT3) PD3
+20	20	io	line	r		(RXD1/INT2) PD2
+19	19	io	line	r		(SDA/INT1) PD1
+18	18	io	line	r		(OC0B/SCL/INT0) PD0
+36	36	io	line	r		(ADC7/TDI) PF7
+37	37	io	line	r		(ADC6/TDO) PF6
+38	38	io	line	r		(ADC5/TMS) PF5
+39	39	io	line	r		(ADC4/TCK) PF4
+40	40	io	line	r		(ADC1) PF1
+41	41	io	line	r		(ADC0) PF0

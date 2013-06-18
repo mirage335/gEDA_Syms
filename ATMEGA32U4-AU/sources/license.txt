@@ -1,0 +1,1 @@
+Files in this folder were originally obtained, or are derived from files obtained from, geda-project.org under the "GNU General Public License (GPL) version 2 or later" license (as gEDA is licensed). They, and all modifications to them, retain that license, which is provided with them, unless a different license is noted in their file.
