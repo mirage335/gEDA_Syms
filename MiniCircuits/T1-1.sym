@@ -95,6 +95,14 @@ T -500 700 8 10 0 1 90 0 1
 footprint=MiniCircuits_SMT_W38
 T -250 700 8 10 0 1 90 0 1
 description=$13/4 MiniCircuits T1-1
+T -1000 700 5 10 0 0 90 0 1
+numslots=0
+T -1200 700 5 10 0 0 90 0 1
+dist-license=MIT
+T -1400 700 5 10 0 0 90 0 1
+use-license=MIT
+T -800 700 5 10 0 0 90 0 1
+author=mirage335
 #
 #The MIT License (MIT)
 #
